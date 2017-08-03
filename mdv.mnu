@@ -1,0 +1,148 @@
+// меню для вызовов функций из пакета MDV
+// ver 1.14 22.03.2016
+// (C) Milkov Dmitry, 2001-2016
+
+
+***MENUGROUP=AC_MDV
+
+***POP1
+               [&MDV]
+ID_MNMDVdraw   [->Рисовать (трасса)]
+ID_MDVdrland	 [Засечки уровня земли]^C^CvbDrawLand
+ID_MDVdrvalik    [Валик]^C^CvbDrawValik
+ID_MDVdrpolka    [Полка с пикетами]^C^CvbDrawPolka
+ID_MDVdrtrassa   [Трасса тр-да]^C^Ctrassa
+ID_MDVdrflag     [Флажок]^C^Cflag
+ID_MDVdrugol     [Угол]^C^C(ugol 1)
+ID_MDVdrugol2    [Угол (2тангенса)]^C^C(ugol 2)
+ID_MDVdrtruba    [Труба]^C^Ctruba
+ID_MDVdrcabel    [Кабель]^C^Ccabel
+ID_MDVdrtrinity  [Тройник]^C^Ctrinity
+ID_MDVdrrelay    [Переукладка трубы]^C^Crelay
+ID_MDVdrpiket  [<-Рубленный пикет]^C^Cpiket
+
+ID_MNMDVdraw2  [->Арматура]
+ID_MDVdr2tees    [Тройник по ГОСТ 17376-2001 исп2]^C^CvbTees
+ID_MDVdr2cap     [Заглушка по ГОСТ 17379-2001 исп.2]^C^CvbCap
+ID_MDVdr2bend    [Отвод по ГОСТ 17375-2001 исп2]^C^CvbBend
+ID_MDVdr2reducer [<-Переход по ГОСТ 17378-2001 исп.2]^C^CvbReducer
+
+ID_MNMDVtext   [->Текстовые утилиты]
+ID_MDVtxtT2M     [Текст в МТекст]^C^CvbText2MText
+ID_MDVtextdel    [Удалить текстовые отметки]^C^Ctextdel
+ID_MDVtxtGOST	 [Установить шрифт GOST_SNG]^C^CvbSetGOST
+ID_MDVtxmakeseq  [Проставить нумерацию]^C^CMakeSeq
+ID_MDVtxpoz      [Изменить нумерацию]^C^Cpoz
+ID_MDVtxpoz2     [Изменение числовых значений]^C^Cpoz2
+ID_MDVtxtoWord   [Экспорт ВР в Word]^C^CvbVRtoWord
+ID_MDVtxtoWord2  [Экспорт CO в Word]^C^CvbSOtoWord
+ID_MDVtxtoWord3  [Экспорт уклонов, длин и поворотов в Word]^C^CvbUKtoWord
+ID_MDVtxtoWord4  [Экспорт ведомости углов поворота в Word]^C^CvbUgPovToWord
+ID_MDVtxexport   [Экспорт спецификации]^C^Cse
+ID_MDVtxtextgrad [Исправить символ ? на %%d]^C^Ctextgrad 
+ID_MDVtxsetx     [Выровнять по X]^C^Csetx
+ID_MDVtxmerge    [Склеить строки]^C^Cmerge
+ID_MDVtxalign    [Интервал]^C^Cmyalign
+ID_MDVtxtadd     [Добавить текст в начало]^C^Ctextadd
+ID_MDVtxtadde    [Добавить текст в конец]^C^Cvbtextadde
+ID_MDVtxpk       [Текст пикета]^C^Cpk
+ID_MDVtxstrim    [Убрать пробелы спереди]^C^Cstrim
+ID_MDVtxni       [Нумерация спецификации]^C^Cni
+ID_MDVtxtxt      [1 строка в центре]^C^Ctxt
+ID_MDVtxtxt2     [2 строки в центре]^C^Ctxt2
+ID_MDVtxtxt3   [<-3 строки в центре]^C^Ctxt3
+
+ID_MNMDVlead   [->Выноски]
+ID_MDVldimport   [Импортировать номера выносок из Excel]^C^CvbLeaderImport
+ID_MDVlddraw     [Нарисовать выноску]^C^CvbDrawLeader
+ID_MDVldmarkl    [Пометить выноски]^C^CvbMarkLeaders
+ID_MDVldunmarkl  [Снять пометку выносок]^C^CvbUnMarkLeaders
+ID_MDVldlset     [Уровень выносок]^C^Clset
+ID_MDVldlhor     [Горизонтальные]^C^Clhor
+ID_MDVldlver     [Вертикальные]^C^Clver
+ID_MDVldleaders [<-Изменить нумерацию]^C^CvbChange_Leader
+
+ID_MNMDVprof   [->Профиль]
+ID_MDVprexport   [Экспорт данных]^C^Cvbacadtoexcel
+ID_MDVprimportVK  [Импорт данных]^C^Cvbimportvk
+ID_MDVprmoveug    [Передвинуть углы]^C^Cvbmoveug
+ID_MDVprkolodez   [Нарисовать колодец]^C^Cvbkolodez
+ID_MDVprskv       [Скважина]^C^CvbSkv
+ID_MDVprfutlar    [Футляр]^C^CvbFutlar
+ID_MDVprtran   [<-Объем траншеи]^C^CvbDeepVolume
+
+ID_MNMDVutil   [->Утилиты]
+ID_MDVutsaveclose [Сохранить и закрыть все]^C^Cvbsavecloseall
+ID_MDVutblip     [Выключить blipmode]^C^C(setvar "blipmode" 0)
+ID_MDVutsumm     [Сумма отметок]^C^Csumm
+ID_MDVutdsumm    [Сумма размеров]^C^CvbDimSumm
+ID_MDVutlayoff   [Выключить все слои]^C^C(command "_.layer" "_off" "*" "_n" "")
+ID_MDVutlayon  [<-Включить все слои]^C^C(command "_.layer" "_on" "*" "")
+
+ID_MNMDV3Darm  [->3D арматура]
+ID_MDV3Dtruba    [Трубопровод]^C^C3Dtruba
+ID_MDV3Dkran     [Кран]^C^C3Dkran
+ID_MDV3Dotvod    [Отвод]^C^C3Dotvod
+ID_MDV3Dperehod  [Переход]^C^C3Dperehod
+ID_MDV3Dtroy     [Тройник]^C^C3Dtroy
+ID_MDV3Dzagl   [<-Заглушка]^C^C3Dzagl
+
+***TOOLBARS
+**TB_MDV
+ID_TbMain        [_Toolbar("MDV Tools", _Floating, _Hide, 71, 166, 1)]
+ID_TBMSumm       [_Button("Сумма текстовых отметок", "summ16.bmp", "summ24.bmp")]^C^Csumm
+ID_TBMMerge      [_Button("Склеить строки", "merge16.bmp", "merge24.bmp")]^C^Cmerge
+ID_TBMTransh     [_Button("Объем траншеи", "transh16.bmp", "transh24.bmp")]^C^CvbDeepVolume
+ID_TBMLeader     [_Button("Текстовая выноска","leader16.bmp","leader24.bmp")]^C^CvbDrawLeader
+ID_TBMImpLead    [_Button("Импортировать номера выносок из Excel","implead16.bmp","implead24.bmp")]^C^CvbLeaderImport
+
+***HELPSTRINGS
+ID_MDVdrpolka    [Нарисовать полку с пикетными отметками и текстом: vbDrawPolka]
+ID_MDVdrtrassa   [Нарисовать трассу трубопровода на профиле: TRASSA]
+ID_MDVdrflag     [Нарисовать флажок: FLAG]
+ID_MDVdrugol     [Нарисовать роспись вертикального угла: (UGOL 1)]
+ID_MDVdrugol2    [Нарисовать роспись вертикального угла c 2 тангенсами: (UGOL 2)]
+ID_MDVdrtruba    [Нарисовать поперечный разрез трубы на продольном профиле: TRUBA]
+ID_MDVdrcabel    [Нарисовать положение кабеля на продольном профиле: CABEL]
+ID_MDVdrtrinity  [Нарисовать тройник: TRINITY]
+ID_MDVdrrelay    [Нарисовать роспись переукладки существующей трубы: RELAY]
+ID_MDVdrpiket    [Нарисовать рубленный пикет: PIKET]
+
+ID_MDVdr2tees    [Нарисовать тройник по ГОСТ 17376-2001: vbTees]
+ID_MDVdr2cap     [Нарисовать заглушку по ГОСТ 17379-2001: vbCap]
+ID_MDVdr2bend    [Нарисовать отвод по ГОСТ 17375-2001: vbBend]
+ID_MDVdr2reducer [Нарисовать переход по ГОСТ 17378-2001: vbReducer]
+
+ID_MDVtextdel    [Удаляет только текстовые отметки: TEXTDEL]
+ID_MDVtxmakeseq  [Проставить сквозную нумерацию в выбранных текстовых отметках (свеху вниз): MAKESEQ]
+ID_MDVtxpoz      [Изменить цифровую нумерацию в спецификации: POZ]
+ID_MDVtxpoz2     [Изменение числовых значений текстовых элементов: POZ2]
+ID_MDVtxexport   [Экспортировать таблицу спецификации в текстовый файл: SE]
+ID_MDVtxtextgrad [Замена неправильно отображающегося символа градус на %%d: TEXTGRAD]
+ID_MDVtxsetx     [Выровнять столбец строк по вертикали (изменяет ориентацию): SETX]
+ID_MDVtxmerge    [Склеить несколько строк в одну: MERGE]
+ID_MDVtxalign    [Выровнять межстрочные интервалы: ALIGN]
+ID_MDVtxtadd     [Добавить в начало строки определенный текст: TEXTADD]
+ID_MDVtxpk       [Добавление букв ПК а также изменение высоты текста до 2.5 и сжатия до 1: PK]
+ID_MDVtxstrim    [Убирает впереди идущие пробелы из текста: STRIM]
+ID_MDVtxni       [Проставить нумерацию в спецификации: NI] 
+ID_MDVtxtxt      [Нарисовать строку в центре прямоугольника: TXT]
+ID_MDVtxtxt2     [Нарисовать 2 строки в центре прямоугольника: TXT2]
+ID_MDVtxtxt3     [Нарисовать 3 строки в центре прямоугольника: TXT3]
+ID_MDVtxtoWord   [Запустите Word, откройте файл шаблона ВР, установите курсор на нужную колонку]
+ID_MDVtxtoWord2  [Запустите Word, откройте файл шаблона CO, установите курсор на нужную колонку]
+ID_MDVtxtoWord3  [Запустите Word, выберите 1 ячейку таблицы из 5 столбцов, введите пикет и выберите все из длина/уклон]
+ID_MDVtxtoWord4  [Запустите Word, выберите 1 ячейку таблицы из 9 столбцов, укажите левую верхнюю ячейку таблицы и выберите данные из таблицы]
+ID_MDVtxtT2M     [Превращает Текст в Мтекст]
+
+ID_MDVldlset     [Установить горизонтальный и вертикальный уровни выносок: LSET] 
+ID_MDVldlhor     [Отрисовать выноску от заданной точки к горизонтальному уровню под углом в 80 градусов: LHOR]
+ID_MDVldlver     [Отрисовать выноску от заданной точки к вертикальному уровню под углом в 80 градусов: LVER]
+ID_MDVldleaders  [Сдвинуть значения выносок на заданное число позиций вверх или вниз: LEADERS]
+
+ID_MDVprexport   [Экспортирование отметок земли в текстовый файл: EXPORTMARKS]
+ID_MDVprimport   [Загрузка предварительно расчитанной в Excel трассы трубопровода: IMPORTMARKS]
+ID_MDVprtran     [Расчитать объем траншеи и среднюю глубину: vbDeepVolume]
+
+ID_MDVutsumm     [Найти сумму числовых отметок: SUMM]
+
